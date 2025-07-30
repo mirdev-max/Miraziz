@@ -1,0 +1,139 @@
+:root {
+  --bg-color: #f4f4f4;
+  --card-bg: #fff;
+  --text-color: #000;
+  --link-color: #333;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #f1f1f1;
+  --link-color: #ccc;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: var(--link-color);
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.social-links a.instagram:hover {
+  color: #e1306c;
+}
+.social-links a.telegram:hover{
+     color: #007bff;
+}
+
+/* Toggle theme button */
+#toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+/* Contact buttons */
+.contact {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+.contact-btn i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.contact-btn.phone {
+  background: transparent;
+  border-color: #4f5bd5;
+  color: #4f5bd5;
+}
+
+.contact-btn.phone:hover {
+  background-color: #4f5bd5;
+  color: #fff;
+}
+
+.contact-btn.email {
+  background: transparent;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.contact-btn.email:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.contact-btn.whatsapp {
+  background: transparent;
+  border-color: #25D366;
+  color: #25D366;
+}
+
+.contact-btn.whatsapp:hover {
+  background-color: #25D366;
+  color: #fff;
+}
